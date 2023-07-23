@@ -1,14 +1,10 @@
-// props 없을 경우
+import "./Header.scss";
 const Header = (props) => {
   return (
     <>
-      <div>{props.title}</div>
+      <div className="header-wrap">Todo List</div>
     </>
   );
-};
-
-Header.defaultProps = {
-  title: "Default",
 };
 
 export default Header;
