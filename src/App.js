@@ -1,11 +1,13 @@
 import "./App.scss";
-import Main from "../src/components/Main";
-import Hook from "./Hook";
+// import Main from "../src/components/Main";
+// import Hook from "./Hook";
+import Average from "./Average";
 function App() {
   return (
     <div className="app">
       {/* <Main /> */}
-      <Hook />
+      {/* <Hook /> */}
+      <Average />
     </div>
   );
 }
