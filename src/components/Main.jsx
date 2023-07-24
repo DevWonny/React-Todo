@@ -1,11 +1,11 @@
+import { useState } from "react";
 import "../components/Main.scss";
 import Header from "./Header";
 import AddItem from "./AddItem";
 import Item from "./Item";
 
-const testList = ["test1", "test2", "test3"];
-
 const Main = () => {
+  const [testList, setTestList] = useState(["test1", "test2", "test3"]);
   return (
     <div className="main-wrap">
       <Header></Header>

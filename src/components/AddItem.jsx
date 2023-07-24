@@ -1,4 +1,8 @@
 import "./AddItem.scss";
+
+const testClick = () => {
+  console.log("click!");
+};
 const AddItem = () => {
   return (
     <>
@@ -9,7 +13,9 @@ const AddItem = () => {
           id="add"
           placeholder="할 일을 입력하세요."
         />
-        <label htmlFor="add">+</label>
+        <label htmlFor="add" onClick={testClick}>
+          +
+        </label>
       </div>
     </>
   );
