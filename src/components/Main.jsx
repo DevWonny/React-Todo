@@ -3,6 +3,8 @@ import Header from "./Header";
 import AddItem from "./AddItem";
 import Item from "./Item";
 
+const testList = ["test1", "test2", "test3"];
+
 const Main = () => {
   return (
     <div className="main-wrap">
@@ -11,7 +13,9 @@ const Main = () => {
 
       <div className="item-list-container">
         {/* list -> map */}
-        <Item></Item>
+        {testList.map((el, index) => (
+          <Item name={el} key={index}></Item>
+        ))}
       </div>
     </div>
   );
